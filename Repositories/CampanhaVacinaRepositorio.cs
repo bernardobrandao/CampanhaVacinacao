@@ -1,5 +1,6 @@
 ﻿using CampanhaVacinacao.Models;
 
+
 namespace CampanhaVacinacao.Repositories
 {
     public class SolicitanteRepository
@@ -11,12 +12,12 @@ namespace CampanhaVacinacao.Repositories
             _context = context;
         }
 
-        public Solicitante GetByCPF(string cpf)
+        public Solicitantes GetByCPF(string cpf)
         {
             return _context.Solicitantes.FirstOrDefault(s => s.CPF == cpf);
         }
 
-        public void Add(Solicitante solicitante)
+        public void Add(Solicitantes solicitante)
         {
             _context.Solicitantes.Add(solicitante);
             _context.SaveChanges();

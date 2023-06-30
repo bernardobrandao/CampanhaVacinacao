@@ -7,6 +7,6 @@
         public string Descricao { get; set; }
         public DateTime DataAplicacao { get; set; }
         public int QuantidadeTotalVacinados { get; set; }
-        public Solicitante Solicitante { get; set; }
+        public Solicitantes Solicitante { get; set; }
     }
 }

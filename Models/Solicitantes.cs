@@ -1,6 +1,6 @@
 ﻿namespace CampanhaVacinacao.Models
 {
-    public class Solicitante
+    public class Solicitantes
     {
         public int Id { get; set; }
         public string Nome { get; set; }
